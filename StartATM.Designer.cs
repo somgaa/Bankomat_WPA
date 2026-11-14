@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartATM));
             this.lblMainMenu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnWithdraw = new System.Windows.Forms.Button();
@@ -36,106 +37,78 @@
             this.btnLatestOperations = new System.Windows.Forms.Button();
             this.btnTransaction = new System.Windows.Forms.Button();
             this.btnCheckBalance = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMainMenu
             // 
             this.lblMainMenu.BackColor = System.Drawing.SystemColors.Highlight;
-            this.lblMainMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            resources.ApplyResources(this.lblMainMenu, "lblMainMenu");
             this.lblMainMenu.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMainMenu.Location = new System.Drawing.Point(0, 0);
             this.lblMainMenu.Name = "lblMainMenu";
-            this.lblMainMenu.Size = new System.Drawing.Size(1112, 57);
-            this.lblMainMenu.TabIndex = 0;
-            this.lblMainMenu.Text = "Главно Меню";
-            this.lblMainMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(0, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1112, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Моля, изберете опция";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnWithdraw
             // 
-            this.btnWithdraw.AutoSize = true;
-            this.btnWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnWithdraw.Location = new System.Drawing.Point(12, 120);
+            resources.ApplyResources(this.btnWithdraw, "btnWithdraw");
             this.btnWithdraw.Name = "btnWithdraw";
-            this.btnWithdraw.Size = new System.Drawing.Size(293, 101);
-            this.btnWithdraw.TabIndex = 2;
-            this.btnWithdraw.Text = "Теглене на пари";
             this.btnWithdraw.UseVisualStyleBackColor = true;
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
             // btnDeposit
             // 
-            this.btnDeposit.AutoSize = true;
-            this.btnDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDeposit.Location = new System.Drawing.Point(12, 308);
+            resources.ApplyResources(this.btnDeposit, "btnDeposit");
             this.btnDeposit.Name = "btnDeposit";
-            this.btnDeposit.Size = new System.Drawing.Size(293, 101);
-            this.btnDeposit.TabIndex = 3;
-            this.btnDeposit.Text = "Внасяне на пари";
             this.btnDeposit.UseVisualStyleBackColor = true;
+            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
             // 
             // btnChangePIN
             // 
-            this.btnChangePIN.AutoSize = true;
-            this.btnChangePIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnChangePIN.Location = new System.Drawing.Point(12, 512);
+            resources.ApplyResources(this.btnChangePIN, "btnChangePIN");
             this.btnChangePIN.Name = "btnChangePIN";
-            this.btnChangePIN.Size = new System.Drawing.Size(293, 101);
-            this.btnChangePIN.TabIndex = 4;
-            this.btnChangePIN.Text = "Смяна на ПИН";
             this.btnChangePIN.UseVisualStyleBackColor = true;
+            this.btnChangePIN.Click += new System.EventHandler(this.btnChangePIN_Click);
             // 
             // btnLatestOperations
             // 
-            this.btnLatestOperations.AutoSize = true;
-            this.btnLatestOperations.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnLatestOperations.Location = new System.Drawing.Point(732, 512);
+            resources.ApplyResources(this.btnLatestOperations, "btnLatestOperations");
             this.btnLatestOperations.Name = "btnLatestOperations";
-            this.btnLatestOperations.Size = new System.Drawing.Size(367, 101);
-            this.btnLatestOperations.TabIndex = 7;
-            this.btnLatestOperations.Text = "Последни операции";
             this.btnLatestOperations.UseVisualStyleBackColor = true;
+            this.btnLatestOperations.Click += new System.EventHandler(this.btnLatestOperations_Click);
             // 
             // btnTransaction
             // 
-            this.btnTransaction.AutoSize = true;
-            this.btnTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnTransaction.Location = new System.Drawing.Point(732, 308);
+            resources.ApplyResources(this.btnTransaction, "btnTransaction");
             this.btnTransaction.Name = "btnTransaction";
-            this.btnTransaction.Size = new System.Drawing.Size(367, 101);
-            this.btnTransaction.TabIndex = 6;
-            this.btnTransaction.Text = "Преводи на следства";
             this.btnTransaction.UseVisualStyleBackColor = true;
+            this.btnTransaction.Click += new System.EventHandler(this.btnTransaction_Click);
             // 
             // btnCheckBalance
             // 
-            this.btnCheckBalance.AutoSize = true;
-            this.btnCheckBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCheckBalance.Location = new System.Drawing.Point(732, 120);
+            resources.ApplyResources(this.btnCheckBalance, "btnCheckBalance");
             this.btnCheckBalance.Name = "btnCheckBalance";
-            this.btnCheckBalance.Size = new System.Drawing.Size(367, 101);
-            this.btnCheckBalance.TabIndex = 5;
-            this.btnCheckBalance.Text = "Провери баланс";
             this.btnCheckBalance.UseVisualStyleBackColor = true;
+            this.btnCheckBalance.Click += new System.EventHandler(this.btnCheckBalance_Click);
+            // 
+            // btnExit
+            // 
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.Name = "btnExit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // StartATM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1112, 637);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLatestOperations);
             this.Controls.Add(this.btnTransaction);
             this.Controls.Add(this.btnCheckBalance);
@@ -144,8 +117,10 @@
             this.Controls.Add(this.btnWithdraw);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMainMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "StartATM";
-            this.Text = "StartATM";
+            this.Load += new System.EventHandler(this.StartATM_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,5 +136,6 @@
         private System.Windows.Forms.Button btnLatestOperations;
         private System.Windows.Forms.Button btnTransaction;
         private System.Windows.Forms.Button btnCheckBalance;
+        private System.Windows.Forms.Button btnExit;
     }
 }

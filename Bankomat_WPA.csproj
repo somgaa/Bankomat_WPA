@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePIN.Designer.cs">
+      <DependentUpon>ChangePIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckBalance.Designer.cs">
+      <DependentUpon>CheckBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposit.Designer.cs">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepositOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositOther.Designer.cs">
+      <DependentUpon>DepositOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LatestOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LatestOperations.Designer.cs">
+      <DependentUpon>LatestOperations.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartATM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +90,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction.Designer.cs">
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Withdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Withdraw.Designer.cs">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithdrawOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawOther.Designer.cs">
+      <DependentUpon>WithdrawOther.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangePIN.resx">
+      <DependentUpon>ChangePIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckBalance.resx">
+      <DependentUpon>CheckBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposit.resx">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositOther.resx">
+      <DependentUpon>DepositOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LatestOperations.resx">
+      <DependentUpon>LatestOperations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartATM.resx">
       <DependentUpon>StartATM.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +138,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Transaction.resx">
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdraw.resx">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawOther.resx">
+      <DependentUpon>WithdrawOther.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

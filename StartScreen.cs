@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
 
 namespace Bankomat_WPA
 {
@@ -17,6 +18,9 @@ namespace Bankomat_WPA
         {
             InitializeComponent();
             txtEnterPIN.PasswordChar = '*';
+            txtEnterPIN.MaxLength = 4;
+
+            StartATM.LoadData();
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -106,7 +110,7 @@ namespace Bankomat_WPA
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            if (txtEnterPIN.Text == "1234")
+            if (txtEnterPIN.Text == StartATM.pin)
             {
                 StartATM menu = new StartATM();
                 menu.Show();
@@ -118,6 +122,10 @@ namespace Bankomat_WPA
                 MessageBox.Show("Грешен ПИН код!");
                 txtEnterPIN.Clear();
             }
+        }
+        public void ResetPIN()
+        {
+            txtEnterPIN.Clear();
         }
     }
 }
